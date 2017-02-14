@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0">
+    <title> Sriguru Institute of Technology</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/plugin/slick/slick.css" type="text/css">
+  <link rel="stylesheet" href="assets/plugin/slick/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+<div class="container">
+<!---  Logo--> 
+<div class="row logo">
+<div class="col-md-6">
+<img class="img-responsive" src="assets/img/logo.jpg">
+</div>
+<div class="col-md-6 text-right">
+<p> <span>Counselling Code</span> <span>2765</span></p>
+</div> 
+</div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">ABOUT SGIT</a></li>
+        <li><a href="#">ACADEMIC</a></li>
+        <li><a href="#">FACILITIES</a></li>
+        <li><a href="#">EXAMINATION</a></li>
+         <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row">
+  <div class="col-xs-12 slickcarosel">
+      <div  class="bg" style="background-image: url(assets/img/first.gif);"></div>
+        <div class="bg" style="background-image: url(assets/img/second.jpg);"></div>
+        <div class="bg" style="background-image: url(assets/img/third.jpg);"></div>
+  </div>
+ </div>
+<!--    Here is the issue-->
+<h1 class="heading"><center>UPCOMING EVENTS</center></h1>
+<div class="about">
+
+<div class="about-widget" style="background-image: url(assets/img/about.jpg);">
+<h1><center><u>ABOUT SGIT</u></center></h1>
+<p class="about">SriGuru Institute ofTechnology (SGIT) is an efficacious student-centered Institution which has been established in the year 2009 by SriGuru Educational Trust, approved by All India Council for Technical Education, New Delhi and affiliated to Anna University, Chennai. Our Institution is ahead in its commitment to learning, research, innovation and entrepreneurship, so that our graduates are prepared to succeed globally.An enlightened management under the visionary guidance of Thiru.S.Subramanian as President and Thiru.R.Natarajan (Sakthi Coach) as Correspondent.</p>
+</div>
+</div>
+    <script src ="assets/js/jquery-3.1.1.min.js"></script>
+    <script src ="assets/js/bootstrap.min.js"></script>
+    <script src ="assets/plugin/slick/slick.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function() {
+			$('.slickcarosel').slick({
+				  slidesToShow: 1,
+				slidesToScroll: 1,
+  				  autoplay: true,
+              autoplaySpeed:2000,
+				infinite: true
+			});
+		});
+	
+	</script>	
+</body>
+</html>
