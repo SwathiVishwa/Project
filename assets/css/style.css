@@ -107,7 +107,7 @@ h3:after {
 
 .about {
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
@@ -118,6 +118,7 @@ h3:after {
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 15px;
 }
 
 .about-widget h1 {
