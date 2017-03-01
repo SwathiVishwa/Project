@@ -79,7 +79,7 @@ h3:after {
 .courses,
 .upcoming-events,
 .social {
-background: rgb(255, 255, 255) transparent;
+background: rgba(255, 255, 255, 0.8);
 	padding-top: 50px;
 	padding-bottom: 50px;
 	line-height: 40px;
