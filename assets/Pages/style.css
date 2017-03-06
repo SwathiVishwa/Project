@@ -1,0 +1,19 @@
+.dropdown-primary
+{
+	position:relative;
+	padding: 50px;
+	color:yellow;
+}
+.dropdown
+{
+	position: absolute;
+	display:none;
+	top: 100%;
+}
+.dropdown-primary:hover .dropdown
+{
+	display:block;
+	position:relative;
+	padding: 50px;
+	color:red;
+}
