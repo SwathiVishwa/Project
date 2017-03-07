@@ -1,9 +1,11 @@
 /* This File is for Home */
-
+body {
+	background-color: #fff;
+}
 .courses,
 .upcoming-events,
 .social {
-background: rgba(255, 255, 255, 0.8);
+/*background: rgba(255, 255, 255, 0.8);*/
 	padding-top: 50px;
 	padding-bottom: 50px;
 	line-height: 40px;
