@@ -3,8 +3,10 @@
 .courses,
 .upcoming-events,
 .social {
+background: rgba(255, 255, 255, 0.8);
 	padding-top: 50px;
 	padding-bottom: 50px;
+	line-height: 40px;
 }
 
 .courses p {
@@ -77,22 +79,6 @@
 
 .upcoming-events h3 {
 	margin-bottom: 50px;
-}
-
-
-/* Placement */
-
-.place h3 {
-	margin-bottom: 40px;
-}
-
-.place p {
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: justify;
-	font-size: 15px;
-	line-height: 30px;
 }
 
 
@@ -187,4 +173,17 @@
 		margin-left: 0px;
 	}
 }
-
+.dropdown
+{
+	position: absolute;
+	display:none;
+	top: 100%;
+}
+.dropdown-primary:hover .dropdown
+{
+	position:absolute;
+	display:block;
+	padding:1px;
+	color:black;
+	background-color:white;
+}
