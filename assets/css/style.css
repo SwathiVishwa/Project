@@ -1,3 +1,5 @@
+/* This File is for Home */
+
 .courses,
 .upcoming-events,
 .social {
@@ -27,17 +29,12 @@
 	padding-bottom: 20px;
 }
 
-.about {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 
 .about-widget {
 	line-height: 22px;
 	max-width: 900px;
 	background-color: rgba(255, 255, 255, 0.91);
-	padding: 20px 0;
+	padding: 20px 15px;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 15px;
@@ -140,66 +137,6 @@
 }
 
 
-/* FOOTER */
-
-.m-tb-15 {
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
-.footer h3 {
-	margin-top: 30px;
-	margin-bottom: 50px;
-}
-
-.footer {
-	background-color: #282d30;
-	color: #767e80;
-	font-size: 12px;
-}
-
-.footer ul {
-	list-style-type: none;
-	padding-left: 0px !important;
-	font-size: 12px;
-}
-
-.footer ul li {
-	padding: 10px 5px;
-}
-
-.footer span {
-	color: #fff !important;
-	margin-right: 8px;
-}
-
-.footer ul li a {
-	color: #767e80 !important;
-}
-
-.footer .social img {
-	display: inline-block;
-}
-
-.footer .newsletter {
-	font-size: 16px !important
-}
-
-.footer .form-group label {
-	color: #fff;
-	font-size: 1.2em;
-	font-weight: 400;
-	margin-top: 30px;
-}
-
-.footer .form-control {
-	height: 35px;
-	background-color: #313537;
-	font-size: 12px;
-	border-color: transparent !important;
-}
-
-
 /*
 .footer h3 {
 	margin-top: 20px;
@@ -207,10 +144,7 @@
 }
 */
 
-.address p.uppercase {
-	font-size: 14px;
-	font-weight: 600;
-}
+
 
 @media (max-width: 767px) {
 	.slickcarosel .bg {
@@ -252,6 +186,5 @@
 	.courses h3:after {
 		margin-left: 0px;
 	}
-	
 }
 

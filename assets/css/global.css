@@ -1,12 +1,18 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+	padding-top: 90px;
 }
 
 .logo {
 /*	border-bottom: 1px solid #ddd;*/
 }
 .logo img {
-	height: 60px;
+	height: 70px;
+}
+
+a {
+	color: #777;
+	outline: none;
 }
 a {
 	text-decoration: none !important;
@@ -18,7 +24,9 @@ a:focus {
 	color: #C80C17;
 }
 
-
+.navbar-nav a {
+	text-transform: uppercase;
+}
 /* Navbar Override */
 .navbar>.container .navbar-brand, 
 .navbar>.container-fluid .navbar-brand {
@@ -39,7 +47,7 @@ padding-top: 5px;
 
 .navbar {
 	background-color: #fff;
-	height: 70px;
+	height: 100px;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
 	border-radius: 0px;
 }
@@ -64,6 +72,32 @@ padding-top: 5px;
 	background-color: #fff;
 }
 
+/* DropDown On Hover */
+.dropdown {
+	position: relative;
+}
+.sub-dropdown {
+	visibility: hidden;
+	opacity: 0;
+	padding: 0px;
+	border: 1px solid #eee;
+	list-style-type: none;
+	transition: all linear 0.25s;
+	-webkit-transition: all linear 0.25s;
+	-moz-transition: all linear 0.25s;
+	-o-transition: all linear 0.25s;
+	-ms-transition: all linear 0.25s;
+}
+.dropdown:hover .sub-dropdown {
+	visibility: visible;
+	opacity: 1;
+}
+.sub-dropdown > li {
+	padding: 10px 15px; 
+	font-size: 13px;
+    font-weight: 400;
+}
+
 /* General Styles */
 h3 {
 	text-align: center;
@@ -79,15 +113,98 @@ h3:after {
 	content: '';
 }
 
+.dark {
+	background-color: #f7f7f7;
+}
+
+.bg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg .overlay {
+	background-color: rgba(0,0,0, 0.6);
+}
+
+
+/* FOOTER */
+
+.m-tb-15 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.footer h3 {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.footer {
+	background-color: #282d30;
+	color: #767e80;
+	font-size: 12px;
+}
+
+.footer ul {
+	list-style-type: none;
+	padding-left: 0px !important;
+	font-size: 12px;
+}
+
+.footer ul li {
+	padding: 10px 5px;
+}
+
+.footer span {
+	color: #fff !important;
+	margin-right: 8px;
+}
+
+.footer ul li a {
+	color: #767e80 !important;
+}
+
+.footer .social img {
+	display: inline-block;
+}
+
+.footer .newsletter {
+	font-size: 16px !important
+}
+
+.footer .form-group label {
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 400;
+	margin-top: 30px;
+}
+
+.footer .form-control {
+	height: 35px;
+	background-color: #313537;
+	font-size: 12px;
+	border-color: transparent !important;
+}
+.address p.uppercase {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+
 @media (min-width: 991px) {
 
 	.navbar-nav>li>a {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	.navbar-collapse.collapse  {
 		float: right;
-		margin-top: 6px;
+	}
+	.sub-dropdown {
+		position: absolute;
+		width: 200px;
+		left: 0px;
+		background-color: #fff;
 	}
 }
 
@@ -95,18 +212,18 @@ h3:after {
 	
 	.navbar-collapse.collapse {
 		display: none !important;
-	
 	}
 	.navbar-collapse {
 		margin-left: -15px !important;
 		margin-right: -15px !important;	
+		margin-top: 30px;
 	}
 	.navbar-collapse.collapse.in {
-		display: block !important
+		display: block !important;
 	}
 	.navbar-toggle {
 		display: block !important;
-		margin-top: 18px;
+		margin-top: 35px;
 	}
 	.navbar-header {
 		float: none;
