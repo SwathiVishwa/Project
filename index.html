@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0">
 	<title> Sriguru Institute of Technology</title>
+	<link rel="stylesheet" href="back.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="assets/plugin/slick/slick.css" type="text/css">
 	<link rel="stylesheet" href="assets/plugin/slick/slick-theme.css" type="text/css">
@@ -42,11 +43,47 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class=""><a href="#"><i class="fa fa-home" aria-hidden="true"></i>HOME<span class="sr-only">(current)</span></a></li>
-					<li><a href="#"><i class="fa fa-university" aria-hidden="true"></i>ABOUT SGIT</a></li>
-					<li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>ACADEMIC</a></li>
-					<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>FACILITIES</a></li>
-					<li><a href="#"><i class="fa fa-book" aria-hidden="true"></i>EXAMINATION</a></li>
-					<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>CONTACT US</a></li>
+					<li class="dropdown-primary"><a href="assets/pages/about.html"><i class="fa fa-university" aria-hidden="true"></i>ABOUT SGIT
+                    <div class="dropdown">
+                     <ul>
+                     <li>SriGuru Trust</li>
+                     <li>The principal</li>
+                     <li>Vision &amp; Mission</li>
+                     <li>college Rules</li>
+                     </ul>
+                    </div></a></li>
+					<li class="dropdown-primary"><a href="assets/pages/admission.html"><i class="fa fa-adn" aria-hidden="true"></i>ADMISSION
+                    <div class="dropdown">
+                     <ul>
+                     <li>Eligiblity</li>
+                     <li>Scholarship</li>
+                     <li>Admission Enquiry</li>
+                    </ul>
+                      </div></a></li>
+					<li class="dropdown-primary"><a href="assets/pages/academic.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>ACADEMICS
+                    <div class="dropdown">
+                     <ul>
+                     <li>Departments</li>
+                     <li>Clubs</li>
+                     <li>Gallery</li>
+                     <li>Placements</li>
+                     <li>Alumni</li>
+                     </ul>
+                    </div></a></li>
+					<li class="dropdown-primary"><a href="assets/pages/facility.html"><i class="fa fa-cog" aria-hidden="true"></i>FACILITIES
+                    <div class="dropdown">
+                     <ul>
+                     <li>Classroom</li>
+                     <li>Hostel</li>
+                     <li>Mess</li>
+                     <li>Labs</li>
+                     <li>ATM</li>
+                     <li>Transport</li>
+                     <li>Cafeteria</li>
+                     </ul>
+                     </div></a></li>
+					<li><a href="assets/pages/Examination.html"><i class="fa fa-book" aria-hidden="true"></i>EXAMINATION</a></li>
+					<li><a href="assets/pages/Contactus.html"><i class="fa fa-map-marker" aria-hidden="true"></i>CONTACT US</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -75,36 +112,8 @@
 				<div class="bg" style="background-image: url(assets/img/third.jpg);"></div>
 			</div>
 		</div>
-		<div class="courses">
-			<div class="row">
-				<div class="col-md-6">
-					<h3 class="">Courses</h3>
-					<p>  SriGuru Institute of Technology Technology (SGIT) is a self – financing educational institution situated in Saravanampatti, Coimbatore District. SGIT is the vision of Dr.Babu Devasenapathi, whose determination and dynamism made possible the realization of this institution of excellence.
-Courses Offered </p>
-				</div>
-				<div class="col-md-6 text-center">
-					<div class="row courses-list">
-						<div class="col-sm-4 col-xs-6"> <i class="flaticon-house150"></i>
-							<h5>B.E.CIVIL</h5> </div>
-						<div class="col-sm-4 col-xs-6"> <i class="flaticon-musical28"></i>
-							<h5>B.E.ECE</h5> </div>
-						<div class="col-sm-4 col-xs-6"> <i class="flaticon-notebook77"></i>
-							<h5>B.E.CS</h5> </div>
-						<div class="col-sm-4 col-xs-6"> <i class="flaticon-windmill"></i>
-							<h5>B.E.EEE</h5> </div>
-						<div class="col-sm-4 col-xs-6"> <i class="flaticon-repair25"></i>
-							<h5>B.E.MECH</h5> </div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="about" style="background-image: url(assets/img/about.jpg);">
-			<div class="about-widget">
-				<h3>WELCOME TO SGIT</h3>
-				<p> SriGuru Institute of Technology (SGIT) is an efficacious student-centered Institution which has been established in the year 2009 by SriGuru Educational Trust, approved by All India Council for technical Education, New Delhi and affiliated to Anna University, Chennai. Our Institution is ahead in its commitment to learning, research,innovation and entrepreneurship, so that our graduates are prepared to succeed globally.An enlightened management under the visionary guidance of Thiru.S.Subramanian as President and Thiru.R.Natarajan (Sakthi Coach) as Correspondent. </p>
-			</div>
-		</div>
-		<div class="upcoming-events">
+		<!--Events-->
+				<div class="upcoming-events">
 			<h3> UPCOMING EVENTS</h3>
 			<div class="row slickcaroselUpcoming">
 				<div class="col-xs-4">
@@ -144,10 +153,35 @@ Courses Offered </p>
 				</div>
 			</div>
 		</div>
-		<div class="place">
-			<h3> SGIT  PLACEMENT</h3>
-			<p>The Corporate Relations team at SriGuru Institute of Technology provides its outstanding access to its students by taking every opportunity to look for matches with corporate needs and look forward to connecting even more closely. Being enthused with a smooth relationship with corporations of all sizes, from startups to mature, successful enterprises, placement team provides all the resources to their students to make them successful in a rapidly changing business environment. Running with a team of dynamic individuals who symbolize the spirit in their professionalism, creativity and passion, our corporate Head and coordinators make the best opportunities enabling every student to realize his/her dream.</p>
-			<p>Training the young minds make them aspire to excel in their interviews with high confidence and determination. The Training Cell offers intensive career oriented training to its students which results in harvesting Industry ready and Employable professionals.</p>
+		<!--Course-->
+		<div class="courses">
+			<div class="row">
+				<div class="col-md-6">
+					<h3 class="">Courses</h3>
+					<p>  SriGuru Institute of Technology Technology (SGIT) is a self – financing educational institution situated in Saravanampatti, Coimbatore District. SGIT is the vision of Dr.Babu Devasenapathi, whose determination and dynamism made possible the realization of this institution of excellence.
+Courses Offered </p>
+				</div>
+				<div class="col-md-6 text-center">
+					<div class="row courses-list">
+						<div class="col-sm-4 col-xs-6"> <i class="flaticon-house150"></i>
+							<h5>B.E.CIVIL</h5> </div>
+						<div class="col-sm-4 col-xs-6"> <i class="flaticon-musical28"></i>
+							<h5>B.E.ECE</h5> </div>
+						<div class="col-sm-4 col-xs-6"> <i class="flaticon-notebook77"></i>
+							<h5>B.E.CS</h5> </div>
+						<div class="col-sm-4 col-xs-6"> <i class="flaticon-windmill"></i>
+							<h5>B.E.EEE</h5> </div>
+						<div class="col-sm-4 col-xs-6"> <i class="flaticon-repair25"></i>
+							<h5>B.E.MECH</h5> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about" style="background-image: url(assets/img/about.jpg);">
+			<div class="about-widget">
+				<h3>WELCOME TO SGIT</h3>
+				<p> SriGuru Institute of Technology (SGIT) is an efficacious student-centered Institution which has been established in the year 2009 by SriGuru Educational Trust, approved by All India Council for technical Education, New Delhi and affiliated to Anna University, Chennai. Our Institution is ahead in its commitment to learning, research,innovation and entrepreneurship, so that our graduates are prepared to succeed globally.An enlightened management under the visionary guidance of Thiru.S.Subramanian as President and Thiru.R.Natarajan (Sakthi Coach) as Correspondent. </p>
+			</div>
 		</div>
 		<div class="social text-center">
 			<h3> Follow Us</h3>
@@ -238,6 +272,7 @@ Courses Offered </p>
 			</div>
 		</section>
 	</footer>
+	<script src="backgroun.js"></script>
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/plugin/slick/slick.min.js"></script>
