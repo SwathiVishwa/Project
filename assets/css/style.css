@@ -173,17 +173,4 @@ background: rgba(255, 255, 255, 0.8);
 		margin-left: 0px;
 	}
 }
-.dropdown
-{
-	position: absolute;
-	display:none;
-	top: 100%;
-}
-.dropdown-primary:hover .dropdown
-{
-	position:absolute;
-	display:block;
-	padding:1px;
-	color:black;
-	background-color:white;
-}
+

@@ -238,6 +238,20 @@ h3:after {
 	.navbar-nav {
 		float: none;
 	}
+	
+	
+	
+	/* DropDown On Hover */
+.sub-dropdown {
+	height: 1px;
+	overflow: hidden;
+}
+.dropdown:hover .sub-dropdown {
+	height: 100%;
+}
+	
+	
+	
 
 }
 
