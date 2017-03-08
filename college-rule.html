@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="assets/plugin/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/flaticon.css">
 	<link rel="stylesheet" href="assets/css/global.css" type="text/css">
-		<link rel="stylesheet" href="assets/css/trustee.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/about.css" type="text/css">
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> </head>
@@ -88,8 +88,67 @@
 		<!-- /.container-fluid -->
 	</nav>
 			
-	<section class="text-center" style="padding: 40px;">Page yet to implement</section>
+	<section class="text-center bg-dark trustee-heading">RULES FOLLOWED IN OUR CAMPUS</section>
+     <section class="service">
+    <div class="container rules">
+            <div>
+  <!-- Nav tabs -->
+                 <div id="process-target">
+  <ul class="nav nav-tabs  text-center" role="tablist">
+    <li role="presentation" class="active"><a href="#college">COLLEGE</a></li>
+    <li role="presentation"><a href="#hostel">HOSTEL</a></li>
+    <li role="presentation"><a href="#library">LIBRARY</a></li>
+  </ul>
+                </div>
 
+        
+		
+		
+		<div id="college">
+		
+		<h4>GENERAL</h4>
+			<p>College works from Monday to Friday and on first, third and fifth Saturdays.</p>
+			<p>Working Hours:  09.00 a.m. –  05.00 p.m.</p>
+			<p>As per the Time Table prescribed from time to time</p>
+			<p>Interval (FN)     : <span>10.40 a.m.</span> –  <span>10.55 a.m. / 11.30 a.m.</span> –  <span>11.45 a.m</span>.</p>
+			<p>Lunch Break    : <span>12.35 p.m</span> – <span>01.25 p.m</span>. / <span>01.25 p.m </span> –  <span>02.15 p.m</span>.</p>
+			<p>Interval (AN)     : <span>03.05 p.m </span>– <span>03.20 p.m.</span> / <span>03.55 p.m.</span> –  <span>04.10 p.m.</span></p>
+	
+		
+		
+		
+		
+		</div>	
+		
+		
+		
+		
+		
+		<div id="hostel">
+		
+		<h4>HOSTEL</h4>
+			
+			<p>Admission to hostel is not automatic. Students desirous of seeking admission to the hostel should apply well before the commencement of the academic year. Admission is strictly restricted only to those who agree to abide by the rules and regulations of the hostel from time to time.</p>
+			<p>The student is expected not to indulge in any undesirable activity thereby causing disturbance to the smooth functioning of the hostel.</p>
+			<p>During the working days, students should attend the College without fail. No student should stay in the hostel during the working hours of the College. They should leave the hostel in time to attend to classes for the day.</p>
+			<p>Attendance will be taken by the Deputy Warden every evening.</p>
+			<p>The study hours in the hostel is from 8.30 p.m. to 10.30 p.m. on all days and in addition 9.00 a.m. to 12.00 noon on holidays. During the study hours, the students are expected to stay in their rooms and keep their doors open. They should avoid chatting or roaming during the study hours.</p>
+			<p>The Parents / Guardians, who wish to visit their ward should produce the relevant visitor’s card before entering the Hostel.</p>
+			<p>The inmates are allowed to visit their home once in a month.</p>
+			<p>Students will be permitted to go to their native place only after obtaining permission from the warden by filling in the prescribed form which is available with the Warden.</p>
+			<p>In Girls hostel, the students are allowed to go home only with their parents or guardian.</p>
+			<p>Students going to their hometown or outing on a holiday should enter the date and time of leaving the hostel in the prescribed register as well as their returning date and time.</p>
+			<p>All the students going for outing should return to the hostel before <span>6.30 p.m</span>.</p>
+			<p>The hostel fee collected at the beginning of the year is for the complete academic year. In case of any student leaving the hostel on his own or expelled from the hostel in the middle, the fee will not be refunded on any account.</p>
+			<p>The furniture, equipment, electrical gadgets and electrical fittings provided to the students should be properly maintained and if any damage is done, action will be taken to recover the cost.</p>
+			<p>Smoking or use of liquor or any other intoxicant or playing cards is strictly prohibited. The guilty will be expelled from the hostel with immediate effect.</p>
+			<p>Management has all rights to expel the student if they are indulging in any in-disciplinary activities / misbehavior in any manner or not abiding by the hostel rules &amp; regulations.</p>
+		</div>		
+		<div id="library"></div>		
+				
+				</div>
+        </div>
+    </section>
 <!--	Footer	  -->
 <footer>
 		<section class="content footer" id="news">
@@ -157,82 +216,34 @@
 	<script src="assets/plugin/slick/slick.min.js"></script>
 	<script src="assets/plugin/trunk8-master/trunk8.js"></script>
 	<script>
-		
-		
-		// Used truncate the multiple line
-		function trunkcate() {
-			$('.trunkate-three').trunk8({
-   					lines: 3
-				});
-		}
-		// Slick slider
-		function slickslider() {
-			$('.slickcarosel').slick({
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				autoplay: true,
-				autoplaySpeed: 2000,
-				infinite: true
-			});
-			$('.slickcaroselUpcoming').slick({
-				slidesToShow: 4,
-				slidesToScroll: 1,
-				autoplay: true,
-				autoplaySpeed: 2000,
-				infinite: true,
-				responsive: [
-					{
-						breakpoint: 1024
-						, settings: {
-							slidesToShow: 3,
-							slidesToScroll: 3,
-							infinite: true,
-							dots: false
-						}
-    }
-					, {
-						breakpoint: 600
-						, settings: {
-							slidesToShow: 2,
-							slidesToScroll: 2
-						}
-    }
-					, {
-						breakpoint: 480
-						, settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-			});
-			
-			$('.slickcaroselUpcoming').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  $('.trunkate-three').trunk8({
-   					lines: 3
-				});
+	$(document).ready(function() {
+    
+ 
+ $('.nav-tabs a').click(function(e){
+   // prevent default action
+//     alert("clicked");
+   
+   // get id of target div (placed in href attribute of anchor element)
+   // and pass it to the scrollToElement function
+    // also, use 2000 as an argument for the scroll speed (2 seconds, 2000 milliseconds)
+	 if ($(".nav-tabs li").hasClass("active")) {
+		 $(".nav-tabs li").removeClass("active");
+	 }
+	 $(this).parent().addClass("active")
+	 
+   scrollToElement( $(this).attr('href'), 2000 );
+        e.preventDefault();
+
+});
+    var scrollToElement = function(el, ms){
+    var speed = (ms) ? ms : 600;
+    $('html,body').animate({
+        scrollTop: $(el).offset().top - 150
+    }, speed);
+}
+
 });
 
-		}
-		
-		
-		
-		
-		
-		
-		$(document).ready(function () {
-			 slickslider();
-			 trunkcate();
-			
-		});
-	
-		$(window).resize(function(){
-			slickslider();
-			 trunkcate();
-		});
 	</script>
 </body>
 

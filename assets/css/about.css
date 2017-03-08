@@ -71,3 +71,27 @@
 	-o-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 }
+.rules span {
+	color: #C80C17;
+}
+.rules .nav-tabs>li {
+	float: none;
+	display: inline-block;
+}
+.rules .nav-tabs {
+	border-color: transparent;
+}
+.rules .nav-tabs>li>a {
+    border: 1px solid #C80C17;
+    border-radius: 50px;
+	color: #C80C17;
+}
+.rules .nav-tabs>li.active>a, .rules .nav-tabs>li.active:hover >a, .rules .nav-tabs>li.active >a:hover {
+background-color: #C80C17;
+	color: #fff;
+	border: 1px solid #C80C17;
+	border-bottom: 1px solid #C80C17;
+}
+#process-target {
+	margin-bottom: 40px;
+}
