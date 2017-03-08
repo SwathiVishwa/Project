@@ -8,11 +8,12 @@
 }
 .trustee-heading {
 	padding: 50px 15px;
+	text-transform: uppercase;
 }
-.trustee-box .img-box {
+.img-box {
 	text-align: center;
 }
-.trustee-box .img-box img {
+.img-box img {
 	width: 200px;
 	padding:10px;
 	display: inline-block;
@@ -30,4 +31,43 @@
 	color: #ccc;
 	margin-top: 0px;
 	margin-bottom: 30px;
+}
+
+.about-principal {
+	max-width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	line-height: 1.8em;
+}
+.about-principal p {
+	margin-bottom: 30px;
+}
+.vision, .mission {
+	padding-bottom: 30px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.vision i, .mission i {
+	font-size: 60px;
+	color: rgba(0,0,0,0.4);
+}
+.mission-logo, .vision-logo {
+	margin-bottom: 20px;
+} 
+.vision:after {
+	content: "";
+	width: 30%;
+	height: 1px;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
 }
