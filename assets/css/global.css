@@ -88,6 +88,10 @@ padding-top: 5px;
 	-o-transition: all linear 0.25s;
 	-ms-transition: all linear 0.25s;
 }
+.sub-dropdown a {
+	display: inline-block;
+	width: 100%;
+}
 .dropdown:hover .sub-dropdown {
 	visibility: visible;
 	opacity: 1;
