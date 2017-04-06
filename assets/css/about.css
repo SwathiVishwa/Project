@@ -75,6 +75,7 @@
 	color: #C80C17;
 }
 .rules .nav-tabs>li {
+	margin-bottom: 5px;
 	float: none;
 	display: inline-block;
 }
