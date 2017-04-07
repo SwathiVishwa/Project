@@ -13,7 +13,16 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/global.css" type="text/css">
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> </head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!--feedback-->
+	<!-- include css file here-->
+	<link rel="stylesheet" href="css/slider.css"/>
+
+    <!-- below line is used for google font-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
+	<script src="js/slider.js"></script>
+	</head>
 <!--headtag-->
 
 <body>
@@ -157,6 +166,32 @@
 		</div>
 			</div>
 	</section>
+	<!-- Sliding div starts here -->
+	<div id="slider" style="right:-342px;">
+		<div id="sidebar" onclick="open_panel()">
+			<img src="images/contact.jpg"/>
+		</div>
+		<div id="header">
+				
+					<h2>Student's Feedback</h2>
+					<p>Our College, We W'll Make it heaven !</p>
+					<input type="text" name="dname" value="Your Name"/>
+					<input type="text" name="demail" value="Your Email"/>
+					<h4>Query type</h4>
+					<select>
+					        <option>General Query</option>
+							<option>Academics</option>
+							<option>Non Academics</option>
+							<option>Sugestions</option>
+						</select>
+					
+					<textarea type="text" value="message">Message</textarea><br/>
+					<button>Send Message</button>
+				
+		</div>
+	</div>
+	<!-- Sliding div ends here -->
+
 	<section class="">
 		<div class="container">
 		<div class="courses">
