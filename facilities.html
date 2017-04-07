@@ -77,11 +77,11 @@
 					</li>
 					<li class="dropdown"><a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i>FACILITIES</a>
 					<ul class="sub-dropdown">
-						<li><a href="facilities.html#classroom">Classroom</a></li>
-					    <li><a href="facilities.html#library">Library</a></li>
-						<li><a href="facilities.html#hostel">Hostel</a></li>
-						<li><a href="facilities.html#lab">Lab</a></li>
-						<li><a href="facilities.html#transport">transport</a></li>
+						<li><a href="#classroom">Classroom</a></li>
+					    <li><a href="#library" >Library</a></li>
+						<li><a href="#hostel" >Hostel</a></li>
+						<li><a href="#lab" >Lab</a></li>
+						<li><a href="#transport" >transport</a></li>
 					</ul>
 					</li>
 					<li><a href="placement.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>PLACEMENT</a></li>
@@ -92,12 +92,16 @@
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
-	<div class="container">
-	<h3>CLASSROOM</h3>
+	
+	<section class="bg-header text-center">facilities</section>
+	<div class="container facilities">
+	
+		<h3 id="classroom">CLASSROOM</h3>
 	   <p>A classroom has students with varied power of understanding and learning, and studying from notes and other materials becomes difficult for some students. But the use of smart classes and modern technology eases the learning process of all our students. In addition to this, the interactive modules like videos and presentations appeals our students who are struggling with the traditional method of teaching in a classroom.</p>
-	<h3>LIBRARY</h3>
+	<h3 id="library">LIBRARY</h3>
 	   <h4>Resources</h4>
          <h5>1. Library Facilities:</h5>
+		<ul>
             <li>The books are classified according to the Dewey decimal classification (DDC) Scheme.</li>
             <li>Bay guides are available for easy access.</li>
             <li>Open access system is followed which goes a long way to help the readers in locating books and making search easy.</li>
@@ -106,16 +110,22 @@
             <li>Books available on Bank Probationary Officer Examination, State Bank of India Probationary Officer Examination (SBI-PO), Reserve Bank of India Examination (RBI), Staff Selection Commission (SSC) Combined Preliminary Examination, Sub- Inspector of Police, Central Bureau of Investigation (CBI) Examination, Railway Recruitment Board Examination and Campus Recruitment Tests. etc.</li>
             <li>Photo Copier and Internet Connection facility available.</li>
             <li>Library automation software with Bar Coding, Scanning and Printing available.</li>
+			</ul>
           <h5>2. Digital Library</h5>
+		<ul>
              <li>National Programme on Technology Enhanced Learning (NPTEL) Videos available.</li>
              <li>Developing Library Network (DELNET) and E-Journals access Facility available IEEE, Springer, Wiley Black Well, J-Gate, ELSEVIER, ASTM Digital Library Online Version and McGraw Hill etc,</li>
              <li>Department of Technical Education Videos on Basic English Grammar, Fundamentals of Mathematics and Fundamentals of Engineering Physics available.</li>
+			</ul>
           <h5>3. Other Resources:</h5>
+		<ul>
              <li>Back Volumes – 541 No’s.</li>
              <li>Non- Book Materials ( CD’s) – 536 No’s</li>
              <li>Student Project Reports – 212 No’s</li>
-	<h3>HOSTEL</h3>
+			</ul>
+	<h3 id="hostel">HOSTEL</h3>
         <h4>HOSTEL FACILITIES</h4>
+		<ul>
              <li>WiFi enabled in hostel.</li>
              <li>Hostel provides quality and nutritious food – both Vegetarian and Non-Vegetarian.</li>
              <li>Uninterrupted power supply, separate Generator for hostels.</li>
@@ -130,8 +140,7 @@
              <li>Medical facility available with free medicines provided to sick students.</li>
              <li>Hot water is available in hostel bathrooms.</li>
              <li>Snacks are provided in the evening.</li>
-	<h3>LABS</h3>
-	<h3>TRANSPORT</h3>
+			</ul>
     </div>
 <!--	Footer	  -->
 <footer>
@@ -264,18 +273,32 @@
 		
 		
 		
-		
+		function scrollHash(){
+  // get hash value
+			console.log("scrollHash");
+  var hash = window.location.hash;
+  // now scroll to element with that id
+  $('html, body').animate({ scrollTop: $(hash).offset().top - 150 }, 1000);
+};
 		
 		$(document).ready(function () {
-			 slickslider();
-			 trunkcate();
+			scrollHash();
+			
+			$(".sub-dropdown a").click(function(){
+					   scrollToElement( $(this).attr('href'), 2000 );
+        e.preventDefault();
+			});
+			
+			
+			var scrollToElement = function(el, ms){
+    var speed = (ms) ? ms : 600;
+    $('html,body').animate({
+        scrollTop: $(el).offset().top - 150
+    }, speed);
+}
 			
 		});
 	
-		$(window).resize(function(){
-			slickslider();
-			 trunkcate();
-		});
 	</script>
 </body>
 

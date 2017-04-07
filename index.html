@@ -16,12 +16,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<!--feedback-->
 	<!-- include css file here-->
-	<link rel="stylesheet" href="css/slider.css"/>
+<!--	<link rel="stylesheet" href="css/slider.css"/>-->
 
     <!-- below line is used for google font-->
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 
-	<script src="js/slider.js"></script>
+<!--	<script src="js/slider.js"></script>-->
 	</head>
 <!--headtag-->
 
@@ -127,35 +127,35 @@
 			<div class="upcoming-events">
 			<h3> UPCOMING EVENTS</h3>
 			<div class="row slickcaroselUpcoming">
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-sm-6 col-xs-4">
 					<div class="bg-upcoming">
 						<div class="overlay-box">
 						<h4>April 3,2017</h4>
 							<p class="trunkate-three"> University Practical Examination For even semester. University Practical Examination For even semester.University Practical Examination For even semester. </p> <a href="#" class="btn btn-primary">learn more</a> </div>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-sm-6 col-xs-4">
 					<div class="bg-upcoming">
 						<div class="overlay-box">
 						<h4>April 10,2017</h4>
 							<p class="trunkate-three"> Commencement of University Examination For Final Year. University Practical Examination For even semester. University Practical Examination For even semester</p> <a href="#" class="btn btn-primary">learn more</a> </div>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-sm-6 col-xs-4">
 					<div class="bg-upcoming">
 						<div class="overlay-box">
 						<h4>May 1,2017</h4>
 							<p class="trunkate-three">Commencement Of University Examiation for Even semester. University Practical Examination For even semester. University Practical Examination For even semester</p> <a href="#" class="btn btn-primary">learn more</a> </div>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-sm-6 col-xs-4">
 					<div class="bg-upcoming">
 						<div class="overlay-box">
 						<h4>Feb 14,2017</h4>
 							<p class="trunkate-three"> Technical seminar on advancement in Soil exploration. University Practical Examination For even semester. University Practical Examination For even semester.</p> <a href="#" class="btn btn-primary">learn more</a> </div>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-sm-6 col-xs-4">
 					<div class="bg-upcoming">
 						<div class="overlay-box">
 						<h4>Feb 16,2017</h4>
@@ -167,13 +167,14 @@
 			</div>
 	</section>
 	<!-- Sliding div starts here -->
+<!--
 	<div id="slider" style="right:-342px;">
-		<div id="sidebar" onclick="open_panel()">
+	<div id="sidebar" onclick="open_panel()">
 			<img src="images/contact.jpg"/>
 		</div>
 		<div id="header">
 				
-					<h2>Student's Feedback</h2>
+				<h2>Student's Feedback</h2>
 					<p>Our College, We W'll Make it heaven !</p>
 					<input type="text" name="dname" value="Your Name"/>
 					<input type="text" name="demail" value="Your Email"/>
@@ -182,7 +183,7 @@
 					        <option>General Query</option>
 							<option>Academics</option>
 							<option>Non Academics</option>
-							<option>Sugestions</option>
+						<option>Sugestions</option>
 						</select>
 					
 					<textarea type="text" value="message">Message</textarea><br/>
@@ -190,6 +191,7 @@
 				
 		</div>
 	</div>
+-->
 	<!-- Sliding div ends here -->
 
 	<section class="">
@@ -328,6 +330,17 @@
 	<script src="assets/plugin/trunk8-master/trunk8.js"></script>
 	<script>
 		
+			$(document).ready(function () {
+			 slickslider();
+				slickcaroselUpcoming();
+			 trunkcate();
+			
+		});
+	
+		$(window).resize(function(){
+//			slickslider();
+			 trunkcate();
+		});
 		
 		// Used truncate the multiple line
 		function trunkcate() {
@@ -344,6 +357,8 @@
 				autoplaySpeed: 2000,
 				infinite: true
 			});
+		}
+		function slickcaroselUpcoming(){
 			$('.slickcaroselUpcoming').slick({
 				slidesToShow: 4,
 				slidesToScroll: 1,
@@ -380,12 +395,16 @@
   ]
 			});
 			
-			$('.slickcaroselUpcoming').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  $('.trunkate-three').trunk8({
-   					lines: 3
-				});
-});
+			
+			
+						$('.slickcaroselUpcoming').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+					  $('.trunkate-three').trunk8({
+										lines: 3
+									});
+						});
 
+			
+	
 		}
 		
 		
@@ -393,16 +412,7 @@
 		
 		
 		
-		$(document).ready(function () {
-			 slickslider();
-			 trunkcate();
-			
-		});
 	
-		$(window).resize(function(){
-			slickslider();
-			 trunkcate();
-		});
 	</script>
 </body>
 
