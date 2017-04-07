@@ -123,8 +123,14 @@ body {
 	margin-top: 0px;
 	margin-bottom: 15px;
 }
-
-
+.address {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.address h4 {
+	font-weight: 400;
+/*	margin-bottom: 20px;*/
+}
 /*
 .footer h3 {
 	margin-top: 20px;

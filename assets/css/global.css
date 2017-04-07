@@ -101,7 +101,15 @@ padding-top: 5px;
 	font-size: 13px;
     font-weight: 400;
 }
-
+.bg-header {
+	    background-color: rgba(61, 67, 81, 1);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+	    padding: 50px 15px;
+    text-transform: uppercase;
+}
 
 /* General Styles */
 h3 {
