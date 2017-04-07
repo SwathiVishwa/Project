@@ -13,6 +13,15 @@ h3 + .table-responsive {
 /*	border-bottom: 1px solid #ccc;*/
 	margin-bottom: 50px;
 }
+#aniimated-thumbnials {
+	text-align: center;
+}
+#aniimated-thumbnials img {
+    height: 200px;
+	display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 @media(min-width: 768px) {
 	#about {
 	    padding-top: 70px;
