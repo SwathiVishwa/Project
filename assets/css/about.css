@@ -96,3 +96,8 @@ background-color: #C80C17;
 #process-target {
 	margin-bottom: 40px;
 }
+
+.rules ul:not(.nav) li {
+	list-style-type: decimal;
+	padding: 10px 0 10px 0;
+}
