@@ -1,9 +1,1 @@
-#connect
-{
-	text-align:center;
-	line-height: 40px;
-}
-input[type=text]
-{
-	width:100%;
-}
+#connect{text-align:center;line-height:40px}input[type=text]{width:100%}
