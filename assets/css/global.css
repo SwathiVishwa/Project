@@ -105,13 +105,21 @@ padding-top: 5px;
     font-weight: 400;
 }
 .bg-header {
-	    background-color: rgba(61, 67, 81, 1);
+	background-color: rgba(61, 67, 81, 1);
     color: #fff;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 40px;
-	    padding: 50px 15px;
+    padding: 50px 15px;
     text-transform: uppercase;
+}
+.bg-header:after {
+	background-color: #d41d1e;
+	margin: 4px auto;
+	display: block;
+	height: 2px;
+	max-width: 150px;
+	content: '';
 }
 
 /* General Styles */
@@ -122,10 +130,10 @@ h3 {
 
 h3:after {
 	background-color: #d41d1e;
+	margin: 8px auto;
 	display: block;
 	height: 2px;
 	max-width: 100px;
-	margin: 8px auto;
 	content: '';
 }
 
